@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sign In"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/SiUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The User ID Here"
+                android:textSize="20dp"
+                android:layout_marginTop="35dp"
+                android:textStyle="italic"/>
+            <EditText
+                android:id="@+id/SiEmailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Email ID Here"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"/>
+            <EditText
+                android:id="@+id/SiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter The Password Here"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:textStyle="italic"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/BtnSiSignIn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sign In"
+                    android:textColor="#0000fb"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/BtnSiCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textColor="#0000fb"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
